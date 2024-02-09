@@ -1,0 +1,700 @@
+*,
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+/* Navbar */
+.navbar {
+  position: fixed;
+  z-index: 999;
+  background-color: #5fbdff;
+  width: 100%;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  box-shadow: 1px 1px 8px 1px #b8b8b8;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3em;
+}
+
+.img-logo {
+  width: 4em;
+  height: 4em;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li,
+.navbar ul li a {
+  list-style-type: none;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1em;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  opacity: 0.8;
+  left: -6px;
+  top: -5px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.search-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2em;
+}
+
+.telusuri {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #61677a;
+  width: 12em;
+  height: 2.2em;
+  border-radius: 5px;
+  margin: 1em;
+}
+
+.telusuri p {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.telusuri input {
+  border: none;
+  height: 2.2em;
+  width: 15em;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.telusuri ::after {
+  border: none;
+}
+
+.telusuri p {
+  margin-left: 0.5em;
+  font-weight: 540;
+}
+
+.search {
+  background-color: #068fff;
+  color: #068fff;
+  width: 4em;
+  height: 2.2em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search img {
+  margin-left: 0.2em;
+  width: 2.3em;
+  height: 2.3em;
+}
+
+.hr {
+  background-color: #ffffff;
+  color: #ffffff;
+  height: 3px;
+  padding-top: 4em;
+}
+
+nav {
+  background-color: #5fbdff;
+  width: 100%;
+  height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 10px 1px #b8b8b8;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #068fff;
+  padding: 0.5em;
+  margin: 1em;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+/* Navbar End */
+/* Main */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 5em;
+}
+
+main {
+  width: 50%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 48em;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px 1px #b8b8b8;
+  display: flex;
+  flex-direction: column;
+}
+
+.live-image {
+  width: 100%;
+  height: 24em;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  z-index: 1;
+}
+
+.classroom {
+  width: 2100px;
+  height: 384px;
+}
+
+.trending {
+  margin: 1em;
+}
+
+.trending h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #61677a;
+  font-size: 1.7em;
+}
+
+.neon-trending p {
+  background-color: #068fff;
+  margin-left: 0.5em;
+  color: #ffffff;
+  width: 9em;
+  height: 5px;
+  border-radius: 50px;
+}
+
+.komik-trending {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.komik-trending ul {
+  display: flex;
+}
+
+.komik-trending ul li {
+  list-style-type: none;
+}
+
+.komik-trending ul li a {
+  text-decoration: none;
+}
+
+.komik-satu,
+.komik-dua,
+.komik-tiga,
+.komik-empat,
+.komik-lima,
+.komik-enam,
+.komik-tujuh,
+.komik-delapan {
+  background-color: #ffffff;
+  width: 8em;
+  height: 14em;
+  margin: 1em;
+  border-radius: 5px;
+  overflow: visible;
+  box-shadow: 0.5px 1px 0px 0px #b8b8b8;
+  font-family: 'Poppins', sans-serif;
+}
+
+.komik-satu div,
+.komik-dua div,
+.komik-tiga div,
+.komik-empat div,
+.komik-lima div,
+.komik-enam div,
+.komik-tujuh div,
+.komik-delapan div {
+  margin: 0.3em;
+  display: flex;
+  font-size: 0.8em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #61677a;
+}
+
+.gambar-komik {
+  width: 8em;
+  height: 11em;
+}
+
+.scrollbar {
+  margin-top: 1em;
+  margin-left: 1em;
+  width: 95%;
+  background-color: #f2f2f2;
+  display: flex;
+  color: #f2f2f2;
+  border-radius: 50px;
+}
+
+.scrollbar input {
+  width: 100%;
+  z-index: 999;
+  opacity: 0;
+}
+
+.scroll p {
+  opacity: 0;
+}
+
+.scroll {
+  background-color: #61677a;
+  width: 10%;
+  position: absolute;
+  border-radius: 50px;
+}
+
+/* Main End */
+/* Pati Suka */
+#pasti-suka {
+  margin: 5em;
+  background-color: #ffffff;
+  width: 50%;
+  border-radius: 10px;
+  height: 38em;
+  font-family: 'Poppins', sans-serif;
+  color: #61677a;
+  font-size: 1em;
+  box-shadow: 0px 1px 10px 1px #b8b8b8;
+}
+
+#pasti-suka h1 {
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-bottom: 0.2em;
+  font-size: 1.7em;
+}
+
+#pasti-suka span p {
+  background-color: #068fff;
+  color: #ffffff;
+  border-radius: 50px;
+  width: 9em;
+  height: 5px;
+  margin-left: 1.8em;
+}
+
+.komik-suka {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 20em;
+}
+
+.komik-suka ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+  justify-content: center;
+}
+
+.komik-suka ul li {
+  list-style-type: none;
+}
+
+.komik-suka ul li a {
+  color: #61677a;
+  text-decoration: none;
+}
+
+.komik-suka ul li a p {
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+
+.suka-satu,
+.suka-dua,
+.suka-tiga,
+.suka-empat,
+.suka-lima,
+.suka-enam,
+.suka-tujuh,
+.suka-delapan {
+  width: 8em;
+  height: 14.2em;
+  margin: 0.9em;
+  box-shadow: 0.5px 1px 0px 0px #b8b8b8;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.gambar-suka {
+  width: 8em;
+  height: 11em;
+}
+/* Pasti Suka End */
+/* Ngobar */
+#ngobar {
+  box-shadow: 0px 1px 10px 1px #b8b8b8;
+  width: 50%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 45em;
+  color: #61677a;
+  font-family: 'Poppins', sans-serif;
+}
+
+#ngobar h1 {
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-bottom: 0.2em;
+  font-size: 1.7em;
+}
+
+.neon-ngobar p {
+  background-color: #068fff;
+  color: #ffffff;
+  border-radius: 50px;
+  width: 9em;
+  height: 5px;
+  margin-left: 1.8em;
+}
+
+#ngobar textarea {
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin: 1em 1.4em;
+  max-width: 92%;
+  min-width: 92%;
+  max-height: 30%;
+  min-height: 30%;
+}
+
+.button {
+  display: flex;
+  justify-content: end;
+}
+
+.ngobar-kirim {
+  background-color: #068fff;
+  border-radius: 8px;
+  width: 5em;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 1.6em;
+}
+
+#ngobar a {
+  color: #ffffff;
+  font-weight: 550;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.komen-satu {
+  width: 93%;
+  border: 2px solid #b8b8b8;
+  border-radius: 5px;
+  margin: 1.3em;
+}
+
+.profile {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.komen-satu span {
+  margin: 0.5em 0.8em;
+  display: flex;
+  align-items: center;
+}
+
+.komen-satu span p {
+  margin-left: 1em;
+  color: #61677a;
+}
+
+.komen-satu p {
+  margin: 0.5em 1em;
+  color: black;
+}
+
+.komen-dua {
+  width: 93%;
+  border: 2px solid #b8b8b8;
+  border-radius: 5px;
+  margin: 1.3em;
+}
+
+.komen-dua span {
+  margin: 0.5em 0.8em;
+  display: flex;
+  align-items: center;
+}
+
+.komen-dua span p {
+  margin-left: 1em;
+  color: #61677a;
+}
+
+.komen-dua p {
+  margin: 0.5em 1em;
+  color: black;
+}
+
+/* Ngobar End */
+/* Footer */
+footer {
+  margin-top: 6em;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5fbdff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+}
+/* Footer End */
+/* Menu Toggle */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, 0px);
+  background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0px);
+  background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+}
+/* Menu Toggle End */
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+  /* Navbar */
+  .logo {
+    margin-left: 1em;
+  }
+
+  .logo img {
+    width: 3em;
+    height: 3em;
+  }
+
+  .logo h1 {
+    font-size: 1.5em;
+  }
+
+  .menu-toggle {
+    display: flex;
+    background-color: #5fbdff;
+    padding: 15px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  .menu-toggle input {
+    left: 3px;
+    opacity: 0;
+    width: 55px;
+    height: 55px;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 65%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #5fbdff;
+    z-index: -1;
+    transform: translate(100%);
+    transition: all 1s;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .navbar ul.slide {
+    transform: translateX(0);
+  }
+
+  .search-tab {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav ul li a {
+    font-size: 0.5em;
+  }
+
+  /* Navbar End */
+  /* Trending */
+  main {
+    width: 100%;
+    height: 40em;
+    border-radius: 0px;
+  }
+
+  .live-image {
+    height: 15em;
+  }
+
+  .classroom {
+    width: 1800px;
+    height: 240px;
+  }
+
+  /* Trending End */
+  /* Pasti Suka */
+  #pasti-suka {
+    width: 100%;
+    height: 45em;
+    margin-top: 3em;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px;
+  }
+
+  .komik-suka ul {
+    margin: 0px;
+  }
+
+  .suka-satu,
+  .suka-dua,
+  .suka-tiga,
+  .suka-empat,
+  .suka-lima,
+  .suka-enam,
+  .suka-tujuh,
+  .suka-delapan {
+    width: 6.5em;
+    height: 11.2em;
+    margin-top: 0.9em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  .gambar-suka {
+    width: 6.5em;
+    height: 8em;
+  }
+  /* Pasti Suka End */
+  /* Ngobar */
+  #ngobar {
+    margin-top: 3em;
+    width: 100%;
+    height: 50em;
+    border-radius: 0px;
+  }
+
+  #ngobar textarea {
+    margin: 1em 0.85em;
+  }
+
+  .komen-satu {
+    margin: 1em 0.85em;
+  }
+
+  .komen-dua {
+    margin: 1em 0.85em;
+  }
+
+  /* Ngobar End */
+  .container {
+    overflow: hidden;
+    padding-top: 0em;
+  }
+}
+/* Mobile End */
