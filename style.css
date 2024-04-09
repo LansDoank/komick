@@ -236,6 +236,7 @@ main {
 .komik-trending {
   width: 100%;
   display: flex;
+  overflow-x: scroll;
   justify-content: start;
 }
 
@@ -264,7 +265,7 @@ main {
   height: 14em;
   margin: 1em;
   border-radius: 5px;
-  overflow: visible;
+  overflow: hidden;
   box-shadow: 0.5px 1px 0px 0px #b8b8b8;
   font-family: 'Poppins', sans-serif;
 }
@@ -295,6 +296,7 @@ main {
   width: 95%;
   background-color: #f2f2f2;
   display: flex;
+  justify-content: start;
   color: #f2f2f2;
   border-radius: 50px;
 }
@@ -549,6 +551,9 @@ footer {
 /* Menu Toggle End */
 /* Mobile */
 @media screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
 
   /* Navbar */
   .logo {
@@ -610,11 +615,13 @@ footer {
 
   nav {
     display: flex;
+    justify-content: start;
     flex-wrap: wrap;
+    overflow: scroll;
   }
 
   nav ul li a {
-    font-size: 0.5em;
+    font-size: 0.6em;
   }
 
   /* Navbar End */
@@ -634,6 +641,27 @@ footer {
     height: 240px;
   }
 
+  /* .trending {
+    margin: 1em 0.5em;
+  } */
+
+  .trending h1 {
+    margin-left: 0.4em;
+  }
+
+  .neon-trending p {
+    width: 25%;
+    margin-left: 1em;
+  }
+
+  .scrollbar {
+    margin: 1em auto;
+  }
+
+  .scroll {
+    width: 20%;
+  }
+
   /* Trending End */
   /* Pasti Suka */
   #pasti-suka {
@@ -644,6 +672,15 @@ footer {
     margin-left: 0px;
     margin-right: 0px;
     border-radius: 0px;
+  }
+
+  #pasti-suka h1 {
+    margin-left: 1.2em;
+  }
+
+  #pasti-suka span p {
+    width: 25%;
+    margin-left: 2.2em;
   }
 
   .komik-suka ul {
