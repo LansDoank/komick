@@ -1,14 +1,3 @@
-// Telusuri
-const search = document.querySelector('.telusuri input');
-const telusuri = document.querySelector('.telusuri p');
-search.addEventListener('click', function () {
-  telusuri.style.display = 'none';
-});
-
-search.addEventListener('', function () {
-  telusuri.style.display = 'block';
-});
-
 const menuToggle = document.querySelector('.menu-toggle input');
 const nav = document.querySelector('.navbar ul');
 
